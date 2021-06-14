@@ -17,7 +17,7 @@ Spigot API for Perforce Network
 #### Global
 Name | InventoryType
 ---- | ----
-GameCompass | Inventory
+`GameCompass` | Inventory
 
 
 <!-- ItemStacks -->
