@@ -11,7 +11,7 @@ import java.util.UUID;
 public class Main {
 
 
-    public void createDuelsNPC() {
+    public void CreateDuelsNPC() {
 
         String uuid = "6b5540ba-993c-4463-b9ad-5aaa14a64c93";
 
@@ -24,7 +24,7 @@ public class Main {
     }
 
 
-    public void createVeteranNPC() {
+    public void CreateVeteranNPC() {
 
         String uuid = "9a5f7bc0-16fa-4e03-9d83-ff1d3106dd96";
 

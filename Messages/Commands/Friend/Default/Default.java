@@ -2,15 +2,12 @@ package net.perforce.perforceapi.Messages.Commands.Friend.Default;
 
 import net.md_5.bungee.api.chat.TextComponent;
 import net.perforce.jayapi.JayAPI;
-import net.perforce.perforceapi.PerforceAPI;
-import net.perforce.perforceapi.Worlds.Lobby.Lobby;
 import net.perforce.perforceapi.Worlds.Worlds;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 
 public class Default {
 
@@ -39,7 +36,7 @@ public class Default {
     }
 
 
-    public void CommandList(Player player) {
+    public void FriendCommands(Player player) {
 
         // Send list of commands to Player
         player.sendMessage("§2━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");

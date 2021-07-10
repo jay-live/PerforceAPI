@@ -13,6 +13,13 @@ public class Errors {
     }
 
 
+    public void CorrectUsage(Player player) {
+
+        player.performCommand("friend help");
+
+    }
+
+
     // TODO - Show Ranks
     public void FriendRequestsDisabled(Player player, String playerToAdd) {
 

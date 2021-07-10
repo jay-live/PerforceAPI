@@ -14,6 +14,7 @@ public class Worlds {
     public Lobby Lobby = new Lobby();
 
 
+    // Get all lobbies
     public static ArrayList<World> getLobbies() {
 
         ArrayList<World> lobbies = new ArrayList<>();
@@ -26,6 +27,7 @@ public class Worlds {
     }
 
 
+    // Get names of all corresponding lobbies
     public static HashMap<World, String> getWorldNames() {
 
         HashMap<World, String> worldNames = new HashMap<>();

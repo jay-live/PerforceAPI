@@ -1,6 +1,7 @@
 package net.perforce.perforceapi.ItemStacks.Lobby.Global;
 
 import net.perforce.jayapi.JayAPI;
+import net.perforce.perforceapi.ItemStacks.Lobby.Global.MyProfile.MyProfile;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -32,7 +33,7 @@ public class Global {
         lore.add("§8Single Combat");
         lore.add("");
         lore.add("§7Fight against another player");
-        lore.add("§7in an intense 1v1!");
+        lore.add("§7in an intense Solo!");
         lore.add("§7Gain §2ranked titles §7by winning games");
         lore.add("§7to show off your §2skill§7!");
         lore.add("");
@@ -43,10 +44,15 @@ public class Global {
 
     }
 
-    // Profile
-    public ItemStack Profile(Player player) {
+    // My Profile
+    //public MyProfile MyProfile = new MyProfile();
+    public ItemStack MyProfile(Player player) {
 
-        return JayAPI.itemStack_manager.createSkullItemStack(player.getName(), 1, "§aYour Profile §7(Right Click)");
+        ArrayList<String> lore = new ArrayList<>();
+        lore.add("§7Right Click to check out your");
+        lore.add("§fPerforce profile§7, §fFriends§7 and more!");
+
+        return JayAPI.itemStack_manager.createSkullItemStack(player.getName(), 1, "§aMy Profile §7(Right Click)", lore);
 
     }
 
@@ -62,9 +68,9 @@ public class Global {
     }
 
     // Lobby Compass
-    public ItemStack LobbyCompass() {
+    public ItemStack LobbyMap() {
 
-        return JayAPI.itemStack_manager.createItemStack(Material.EMPTY_MAP, 1, 0, "§aLobby Compass §7(Right Click)");
+        return JayAPI.itemStack_manager.createItemStack(Material.EMPTY_MAP, 1, 0, "§aLobby Map §7(Right Click)");
 
     }
 
